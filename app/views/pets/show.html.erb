@@ -8,10 +8,10 @@
       <p>Found <%= pluralize(@pet.found_days_ago, 'day') %> ago</p>
     </div>
     <div class="d-flex">
-      <%= link_to edit_pet_path(@pet), class: 'btn-light' do %>
+      <%= link_to edit_pet_path(@pet), class: 'btn-light', class: 'card-action card-destroy' do %>
         <i class="fas fa-pencil-alt"></i>
       <% end %>
-      <%= link_to pet_path(@pet), method: :delete, data: { confirm: "you sure?" }, class: 'ml-2 btn-light' do %>
+      <%= link_to pet_path(@pet), method: :delete, data: { confirm: "you sure?" }, class: 'card-action card-edit' do %>
         <i class="fas fa-times"></i>
       <% end %>
     </div>

@@ -6,4 +6,5 @@
     <p>Health: <%= pet.status %></p>
     <p>Found <%= pluralize(pet.found_days_ago, 'day') %> ago</p>
   </div>
+  <%= link_to '', pet_path(pet), class: 'card-link' %>
 </div>

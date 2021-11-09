@@ -5,6 +5,32 @@
   box-shadow: 0 0 15px rgba(0,0,0,0.2);
   display: flex;
   align-items: center;
+  position: relative;
+}
+
+.card-link {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+.card-action {
+  position: absolute;
+  color: rgba(173, 173, 173, 0.8);
+  &:hover {
+    color: rgba(173, 173, 173, 1);
+  }
+}
+
+.card-destroy {
+  top: 8px;
+  right: 8px;
+}
+
+.card-edit {
+  bottom: 8px;
+  right: 8px;
 }
 
 .card-product img {
