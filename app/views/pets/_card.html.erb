@@ -1,0 +1,9 @@
+<div class="card-product">
+  <%= image_tag "http://source.unsplash.com/featured/?#{pet.species}&#{rand(1000)}"%>
+  <div class="card-product-infos">
+    <h2><%= pet.name %></h2>
+    <p><%= pet.address %></p>
+    <p>Health: <%= pet.status %></p>
+    <p>Found <%= pluralize(pet.found_days_ago, 'day') %> ago</p>
+  </div>
+</div>
